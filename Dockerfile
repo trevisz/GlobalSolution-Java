@@ -1,15 +1,16 @@
-# Etapa de build
 FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
-COPY . .
 
-# Garanta permissão de execução
+# Copia especificamente o mvnw e dá permissão antes do restante
+COPY mvnw mvnw
 RUN chmod +x mvnw
+
+# Agora copia o restante
+COPY . .
 
 RUN ./mvnw clean package -DskipTests
 
-# Etapa de runtime
 FROM eclipse-temurin:21-jre
 
 WORKDIR /app
