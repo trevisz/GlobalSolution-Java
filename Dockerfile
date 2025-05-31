@@ -3,6 +3,10 @@ FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 COPY . .
+
+# Garanta permissão de execução
+RUN chmod +x mvnw
+
 RUN ./mvnw clean package -DskipTests
 
 # Etapa de runtime
