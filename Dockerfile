@@ -1,17 +1,15 @@
-FROM eclipse-temurin21-jdk AS build
+# Etapa de build
+FROM eclipse-temurin:21-jdk AS build
 
-WORKDIR app
-
+WORKDIR /app
 COPY . .
+RUN ./mvnw clean package -DskipTests
 
-RUN .mvnw clean package -DskipTests
+# Etapa de runtime
+FROM eclipse-temurin:21-jre
 
-FROM eclipse-temurin21-jre
-
-WORKDIR app
-
-COPY --from=build apptargetquarkus-app .
+WORKDIR /app
+COPY --from=build /app/target/quarkus-app .
 
 EXPOSE 8080
-
-CMD [java, -jar, quarkus-run.jar]
+CMD ["java", "-jar", "quarkus-run.jar"]
