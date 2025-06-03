@@ -43,33 +43,6 @@ Este projeto é parte da disciplina de **Domain Driven Design (DDD)** e tem como
 
 ---
 
-## 📂 Estrutura do Projeto
-
-GlobalSolution/
-├── bo/
-│ ├── GSUsuarioBO.java
-│ ├── GSPerguntaBO.java
-│ └── GSResultadoBO.java
-├── dao/
-│ ├── GSUsuarioDAO.java
-│ ├── GSPerguntaDAO.java
-│ └── GSResultadoDAO.java
-├── model/
-│ ├── GSUsuario.java
-│ ├── GSPergunta.java
-│ └── GSResultado.java
-├── resource/
-│ ├── UsuarioResource.java
-│ ├── PerguntaResource.java
-│ └── ResultadoResource.java
-├── exception/
-│ └── WebApplicationExceptionMapper.java
-└── util/
-└── Conexao.java
-
-
----
-
 ## 🌐 Endpoints da API
 
 ### 🧑 Usuários
