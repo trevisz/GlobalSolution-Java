@@ -101,5 +101,3 @@ Este projeto é parte da disciplina de **Domain Driven Design (DDD)** e tem como
 Este projeto é acadêmico e foi desenvolvido como parte da disciplina de Domain Driven Design na FIAP.
 
 ---
-
-🚀 **Projeto pronto para evoluir com Front-end e integração total!**
