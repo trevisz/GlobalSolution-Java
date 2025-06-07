@@ -85,14 +85,15 @@ Este projeto é parte da disciplina de **Domain Driven Design (DDD)** e tem como
 
 ## 🎬 Vídeo Demonstração
 
-*(Em breve)* – Demonstração em vídeo do sistema funcionando.
+*https://youtu.be/7Qe9Kd_azCs* – Demonstração em vídeo do sistema funcionando.
 
 ---
 
 ## 📝 Contribuidores
 
 - [João Victor Trevisan] - RM: [560263]
-- 
+- [Vinicius Rodrigues de Oliveira] - RM: [550611]
+- [Henrique Marques Sladkevicius] - RM: [560698]
 
 ---
 
